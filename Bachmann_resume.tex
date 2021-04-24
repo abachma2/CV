@@ -1,0 +1,197 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Amanda M. Bachmann
+
+\documentclass[margin,line]{resume}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+%\usepackage{doi}
+\hypersetup{
+    colorlinks=true,%
+    linkcolor=blue,%
+    filecolor=magenta,%
+    urlcolor=cyan,%
+    breaklinks=true
+}
+\urlstyle{same}
+\usepackage{xspace}
+%\textheight=10.75in
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
+
+% Trying to bold my name in the bib
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Bachmann}{\textbf{#1}}{#1}%
+}
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Amanda M. Bachmann}
+\begin{resume}
+
+\bibliographystyle{abbrvurl-huff}
+\nobibliography{cv}
+
+    % Contact Information
+    \section{\mysidestyle Contact\\Information}
+    Graduate Research Assistant \hfill mobile: (813) 495-5698 \vspace{0mm}\\\vspace{0mm}%
+    NEUP Fellow \hfill e-mail: amandab7@illinois.edu            \vspace{0mm}\\\vspace{0mm}%
+        \textsl{University of Illinois, Urbana-Champaign} \\
+        \textsl{Nuclear, Plasma, and Radiological Engineering}
+    \vspace{-2mm}\\\vspace{-4.5mm}%
+
+    %__________________________________________________________________________________________________________________
+    % Resume Objective
+    %\section{\mysidestyle Objective}
+                %Seeking research and teaching opportunities in nuclear engineering and scientific computation.%
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    %\section{\mysidestyle Research\\Interests}
+    %            Advanced nuclear reactors and fuel cycles, nuclear non-proliferation,
+    %            nuclear fuel cycle analysis,
+    %            scientific computation.
+    %\vspace{-2mm}
+    %__________________________________________________________________________________________________________________
+    % Academic Appointments
+    %           \vspace{-2mm}
+    %\section{\mysidestyle Academic\\Appointments}
+    %           \vspace{-2mm}\\\vspace{-3mm}%
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle PhD}
+    \textbf{University of Illinois Urbana-Champaign}, \textsc{Nuclear Engineering}\hfill \textbf{ Aug 2020 -- Present}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Nuclear Fuel Cycle Transition to High Assay Low Enriched Uranium Fueled Reactors
+        \item GPA: 4.0/4.0
+    \end{list2}\vspace{-4mm}
+    %GPA: /4.04,0
+    \section{\mysidestyle MS}
+    \textbf{University of Tennessee, Knoxville}, \textsc{Nuclear Engineering}\hfill\textbf{Aug 2019 -- Aug 2020}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Empirical Modeling of Used Nuclear Fuel Signatures Radiation Emissions for Safeguards Purposes
+        \item GPA: 3.96/4.0
+    \end{list2}\vspace{-4mm}
+    %GPA: 3.96/4.0
+    \section{\mysidestyle BS}
+    \textbf{University of Tennessee, Knoxville}, \textsc{Nuclear Engineering}\hfill\textbf{Aug 2015 -- May 2019}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{itemize}
+        \item GPA: 3.91/4.0
+    \end{itemize}\vspace{-2mm}
+    
+    %__________________________________________________________________________________________________________________
+    % Research Experience
+    \section{\mysidestyle Select \\Research\\Experience}
+    \textbf{University of Illinois at Urbana-Champaign}, Urbana, IL \hfill \textbf{Aug 2020 -- Present} \\
+                \textsl{NEUP Fellow, Advanced Reactors and Fuel Cycles Group} \\
+                Investigating impacts of the transition to HALEU-fueled advanced 
+                reactors on the nuclear fuel cycle
+        \vspace{-3mm}
+
+    \textbf{University of Tennessee, Knoxville}, Knoxville, TN \hfill \textbf{Aug 2019 -- Aug 2020}\\
+                \textsl{Graduate Research Assistant, Coble Research Lab} \\ 
+                Developed multivariate models of used nuclear fuel signatures for 
+                used in nonproliferation safeguards
+
+        \vspace{-3mm}
+    \textbf{Oak Ridge National Laboratory}, Oak Ridge, TN \hfill \textbf{May 2019-- Aug 2019}\\
+                \textsl{NESLS Intern, Radiation Transport High Performance Computing Methods and Applications Team}\\
+                Investigated differences in doppler broadening of cross section data in SHIFT Monte Carlo code
+        
+        \vspace{-2mm}
+
+    %__________________________________________________________________________________________________________________
+    
+    %__________________________________________________________________________________________________________________
+
+    %__________________________________________________________________________________________________________________
+    %            
+    \section{\mysidestyle Journal\\Publications}
+    %\section{\mysidestyle Refereed\\Journal\\Publications} % also, vspace below
+      \begin{bibenum}
+      \item \bibentry{bachmann_comparison_2021}
+      \end{bibenum}
+      %\vspace{2mm} % add this back if you return to Refereed Journal..
+      %\section{\mysidestyle Submitted}
+      %\begin{bibenum}
+      %\end{bibenum}
+    %\section{\mysidestyle Refereed\\Conference\\Proceedings}
+
+    %__________________________________________________________________________________________________________________
+    % Submitted Journal Publications
+    %           \vspace{-2mm}
+    %\section{\mysidestyle Submitted\\Journal\\Publications}
+    %            Submitted Journal Publications \vspace{-2mm}\\\vspace{-3mm}%
+    %__________________________________________________________________________________________________________________
+    % Conference Publications
+    \section{\mysidestyle Select\\Refereed\\Conference\\Abstracts}
+    \begin{bibenum}
+    \item \bibentry{bachmann_enriched_2021} [poster] 
+        \vspace{-3mm}
+
+    \item \bibentry{gilliam_source_2018}
+
+    \end{bibenum}
+
+    %__________________________________________________________________________________________________________________
+    % Honors and Awards
+    \section{\mysidestyle Honors and\\Awards}
+    ANS Student Sections Commendations, ANS Student Sections Committee \hfill \textbf{2020}\vspace{.5mm}\\%
+    U.S. WIN Region II Leadership Award, U.S. WIN Region II \hfill \textbf{2020}\vspace{.5mm}\\%
+    Girl Scout Gold Award, Girl Scouts of America \hfill \textbf{2015}\vspace{.5mm}\\%
+    \vspace{-7mm}
+    %__________________________________________________________________________________________________________________
+    % Technical Reports
+    %__________________________________________________________________________________________________________________
+    % Other Publications
+    %__________________________________________________________________________________________________________________
+    % Media Coverage
+    %__________________________________________________________________________________________________________________
+    % Invited Talks
+
+    %__________________________________________________________________________________________________________________
+    % Panels
+   %__________________________________________________________________________________________________________________
+        %__________________________________________________________________________________________________________________
+    % Advising
+        %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle Scientific\\Computing\\Skills}
+                \textbf{Languages} \hfill Python \vspace{.5mm}\\%
+                %\textbf{Build Systems} \hfill make, CMake, automake\vspace{.5mm}\\%
+                \textbf{Databases} \hfill HDF5 \vspace{.5mm}\\%
+                \textbf{Test Frameworks} \hfill nose\vspace{.5mm}\\%
+                \textbf{Version Control} \hfill git \vspace{.5mm}\\%
+                \textbf{Other Tools} \hfill \LaTeX, MatLab, MCNP, ORIGAMI, ORIGEN \vspace{.5mm}%
+        \vspace{-3mm}
+    %__________________________________________________________________________________________________________________
+    % Professional, Student Organizations
+    \section{\mysidestyle Professional\\Service}
+                \textbf{Member}, Diversity and Inclusion Committee, ANS  \hfill \textbf{2020--Present}\vspace{.5mm}\\%
+                \textbf{Member}, Scholarship and Policy Coordiantion Committee, ANS  \hfill \textbf{2020--Present}\vspace{.5mm}\\%
+                \textbf{Co-Vice Chair}, Student Sections Committee, ANS  \hfill \textbf{2019--Present}\vspace{.5mm}\\%
+                \textbf{Twitter Lead}, Communications Committee, U.S. WIN  \hfill \textbf{2018--Present}\vspace{.5mm}\\%
+                \textbf{Member}, Region II Conference Planning Committee, U.S. WIN  \hfill \textbf{2018--2019}\vspace{.5mm}\\%
+                \textbf{Member}, American Nuclear Society  \hfill \textbf{2016--Present}\vspace{.5mm}\\%
+                \textbf{Member}, U.S. Women in Nuclear  \hfill \textbf{2015--Present}\vspace{.5mm}\\%
+
+
+    %__________________________________________________________________________________________________________________
+    % References
+
+%\section{\mysidestyle References}
+%\texsl{Available upon request}
+
+%______________________________________________________________________________________________________________________
+
+
+    %__________________________________________________________________________________________________________________
+\end{resume}
+
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+
